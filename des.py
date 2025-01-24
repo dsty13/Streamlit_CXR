@@ -141,11 +141,11 @@ if st.session_state.page == "input_image":
                 predicted_class = np.argmax(prediction, axis=1)
 
                 if predicted_class == 0:
-                    st.write("Prediksi: **COVID-19**")
+                    st.write("XRAY tersebut di Prediksi sebagai: **COVID-19**")
                 elif predicted_class == 1:
-                    st.write("Prediksi: **Pneumonia**")
+                    st.write("XRAY tersebut di Prediksi sebagai: **Pneumonia**")
                 elif predicted_class == 2:
-                    st.write("Prediksi: **Normal**")
+                    st.write("XRAY tersebut di Prediksi sebagai: **Normal**")
 
     if st.button("Kembali"):
         st.session_state.page = "home"
@@ -172,11 +172,11 @@ if st.session_state.page == "try_sample":
                     predicted_class = np.argmax(prediction, axis=1)
 
                     if predicted_class == 0:
-                        st.write("Prediksi: **COVID-19**")
+                        st.write("XRAY tersebut di Prediksi sebagai: **COVID-19**")
                     elif predicted_class == 1:
-                        st.write("Prediksi: **Pneumonia**")
+                        st.write("XRAY tersebut di Prediksi sebagai: **Pneumonia**")
                     elif predicted_class == 2:
-                        st.write("Prediksi: **Normal**")
+                        st.write("XRAY tersebut di Prediksi sebagai: **Normal**")
 
     # Kolom kedua untuk Pneumonia
     with col2:
@@ -192,11 +192,11 @@ if st.session_state.page == "try_sample":
                     predicted_class = np.argmax(prediction, axis=1)
 
                     if predicted_class == 0:
-                        st.write("Prediksi: **COVID-19**")
+                        st.write("XRAY tersebut di Prediksi sebagai: **COVID-19**")
                     elif predicted_class == 1:
-                        st.write("Prediksi: **Pneumonia**")
+                        st.write("XRAY tersebut di Prediksi sebagai: **Pneumonia**")
                     elif predicted_class == 2:
-                        st.write("Prediksi: **Normal**")
+                        st.write("XRAY tersebut di Prediksi sebagai: **Normal**")
 
     # Kolom ketiga untuk Normal
     with col3:
@@ -212,11 +212,11 @@ if st.session_state.page == "try_sample":
                     predicted_class = np.argmax(prediction, axis=1)
 
                     if predicted_class == 0:
-                        st.write("Prediksi: **COVID-19**")
+                        st.write("XRAY tersebut di Prediksi sebagai: **COVID-19**")
                     elif predicted_class == 1:
-                        st.write("Prediksi: **Pneumonia**")
+                        st.write("XRAY tersebut di Prediksi sebagai: **Pneumonia**")
                     elif predicted_class == 2:
-                        st.write("Prediksi: **Normal**")
+                        st.write("XRAY tersebut di Prediksi sebagai: **Normal**")
 
     if st.button("Kembali"):
         st.session_state.page = "home"
