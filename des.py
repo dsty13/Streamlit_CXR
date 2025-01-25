@@ -126,8 +126,7 @@ with col2:
 # Halaman input gambar
 if st.session_state.page == "input_image":
     st.title("Input Gambar")
-    st.write("Silahkan masukkan gambar XRAY dada:")
-    uploaded_file = st.file_uploader("Unggah gambar", type=["png", "jpg", "jpeg"])
+    uploaded_file = st.file_uploader("Silahkan masukkan gambar XRAY dada:", type=["png", "jpg", "jpeg"])
 
     if uploaded_file is not None:
         with open("temp_image.png", "wb") as f:
