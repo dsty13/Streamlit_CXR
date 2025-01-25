@@ -126,6 +126,7 @@ with col2:
 # Halaman input gambar
 if st.session_state.page == "input_image":
     st.title("Input Gambar")
+    st.write("Silahkan masukkan gambar XRAY dada:")
     uploaded_file = st.file_uploader("Unggah gambar", type=["png", "jpg", "jpeg"])
 
     if uploaded_file is not None:
@@ -154,6 +155,7 @@ if st.session_state.page == "input_image":
 # Halaman gambar sampel
 if st.session_state.page == "try_sample":
     st.title("Coba Gambar Sampel")
+    st.write("Silahkan klik salah satu button berikut:")
 
     # Membuat 3 kolom untuk menampilkan gambar sampel sesuai dengan kelasnya
     col1, col2, col3 = st.columns(3)  # Membuat tiga kolom
